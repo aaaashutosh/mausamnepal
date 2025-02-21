@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausam Nepal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="logo.png"> <!-- Favicon -->
+</head>
+<body>
+    <!-- Navbar with Logo -->
+    <nav>
+        <a href="index.html"><img src="logo.png" alt="Mausam Nepal Logo" class="logo"></a>
+        <h1>Mausam Nepal</h1>
+    </nav>
+
+    <div class="form-container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button onclick="searchWeather()">🔍</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Select City ▼</button>
+            <div class="dropdown-content" id="cityDropdown">
+                <span class="city-option" data-city="Chandragadhi">Chandragadhi</span> 
+                <span class="city-option" data-city="Pokhara">Pokhara</span>
+                <span class="city-option" data-city="Lalitpur">Lalitpur</span>
+                <span class="city-option" data-city="Biratnagar">Biratnagar</span>
+                <span class="city-option" data-city="Dharan">Dharan</span>
+                <span class="city-option" data-city="Butwal">Butwal</span>
+                <span class="city-option" data-city="Hetauda">Hetauda</span>
+                <span class="city-option" data-city="Itahari">Itahari</span>
+                <span class="city-option" data-city="Kanchanpur, Nepal">Kanchanpur</span>
+                <span class="city-option" data-city="Bandipur, Nepal">Bandipur</span>
+                <span class="city-option" data-city="Lete, Nepal">Lete</span>
+                <span class="city-option" data-city="Palpa, Nepal">Palpa</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <img class="live_icon" src="live.gif" alt="" srcset="">
+        <div id="weatherInfo" style="display:none;">
+            <h2 id="location"></h2>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <img id="weatherIcon" src="" alt="Weather Icon">
+            <p id="dateTime"></p> <!-- Element for Date and Time -->
+        </div>
+        
+    </div>
+    <p>Note: This search engine is not precise, for precise location add Nepal after comma.</p>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&#169; 2025 <a href="https://aashutoshkhatiwada.com.np/" target="_blank">Author: Aashutosh Khatiwada</a> | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
